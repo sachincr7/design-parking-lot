@@ -3,6 +3,7 @@ import { Vehicle } from "./vehicle";
 import { VehicleType } from "./vehicle-type";
 
 export class ParkingSpot {
+	
 	private spotNumber: number;
 	private supportedVehicles: VehicleType[];
   private spotStatus: SpotStatus;

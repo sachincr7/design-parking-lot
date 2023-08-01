@@ -1,20 +1,11 @@
+import { BaseModel } from "./base-model";
 import { Gate } from "./gate";
 import { ParkingFloor } from "./parking-floor";
 
-export class ParkingLot {
-	private parkingFloors: ParkingFloor[] = [];
-	private gates: Gate[] = [];
-	private capacity: number;
-
-	constructor (
-		parkingFloors: ParkingFloor[],
-		gates: Gate[],
-		capacity: number,
-	) {
-		this.parkingFloors = parkingFloors;
-		this.gates = gates;
-		this.capacity = capacity;
-	}
+export class ParkingLot extends BaseModel {
+	private parkingFloors!: ParkingFloor[];
+	private gates!: Gate[];
+	private capacity!: number;
 
 	getParkingFloors(): ParkingFloor[] {
 		return this.parkingFloors;
@@ -24,7 +15,7 @@ export class ParkingLot {
 		return this.gates;
 	}
 
-	getCapacity(): number {
+	getCapacity(): number | null {
 		return this.capacity;
 	}
 

@@ -1,25 +1,14 @@
+import { BaseModel } from "./base-model";
 import { SpotStatus } from "./spot-status";
 import { Vehicle } from "./vehicle";
 import { VehicleType } from "./vehicle-type";
 
-export class ParkingSpot {
+export class ParkingSpot extends BaseModel {
 	
-	private spotNumber: number;
-	private supportedVehicles: VehicleType[];
-  private spotStatus: SpotStatus;
-  private vehicle: Vehicle;
-
-	constructor (
-		spotNumber: number,
-		supportedVehicles: VehicleType[],
-		spotStatus: SpotStatus,
-		vehicle: Vehicle
-	) {
-		this.spotNumber = spotNumber;
-		this.supportedVehicles = supportedVehicles;
-		this.spotStatus = spotStatus;
-		this.vehicle = vehicle;
-	}
+	private spotNumber!: number;
+	private supportedVehicles!: VehicleType[];
+  private spotStatus!: SpotStatus;
+  private vehicle!: Vehicle;
 
 	getSpotNumber(): number {
 		return this.spotNumber;

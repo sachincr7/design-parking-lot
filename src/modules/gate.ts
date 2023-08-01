@@ -1,19 +1,13 @@
+import { BaseModel } from "./base-model";
 import { GateStatus } from "./gate-status";
 import { GateType } from "./gate-type";
 import { Operator } from "./operator";
 
-export class Gate {
-	private gateNumber: number;
-	private operator: Operator;
-  private gateStatus: GateStatus;
-  private gateType: GateType;
-
-	constructor (gateNumber: number, operator: Operator, gateStatus: GateStatus, gateType: GateType) {
-		this.gateNumber = gateNumber;
-		this.operator = operator;
-		this.gateStatus = gateStatus;
-		this.gateType = gateType;
-	}
+export class Gate extends BaseModel {
+	private gateNumber!: number;
+	private operator!: Operator;
+  private gateStatus!: GateStatus;
+  private gateType!: GateType;
 
 	getGateNumber(): number {
 		return this.gateNumber;

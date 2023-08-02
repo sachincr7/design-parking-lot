@@ -5,7 +5,7 @@ import { Operator } from "./operator";
 
 export class Gate extends BaseModel {
 	private gateNumber!: number;
-	private operator!: Operator;
+	private currentOperator!: Operator;
   private gateStatus!: GateStatus;
   private gateType!: GateType;
 
@@ -14,7 +14,7 @@ export class Gate extends BaseModel {
 	}
 
 	getOperator(): Operator {
-		return this.operator;
+		return this.currentOperator;
 	}
 
 	getGateStatus(): GateStatus {
@@ -30,7 +30,7 @@ export class Gate extends BaseModel {
 	}
 
 	setOperator(operator: Operator) {
-		this.operator = operator;
+		this.currentOperator = operator;
 	}
 
 	setGateStatus(status: GateStatus) {

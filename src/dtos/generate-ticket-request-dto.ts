@@ -1,42 +1,31 @@
-import { ResponseStatus } from "./response-status";
+import { VehicleType } from "../modules/vehicle-type";
 
 export class GenerateTicketRequestDto {
-  ticketId!: number;
-  operatorName!: string;
-  spotNumber!: number;
+  private vehicleNumber!: string;
+  private vehicleType!: VehicleType;
+  private gateId!: number;
 
-  responseStatus!: ResponseStatus;
-  message!: string;
-
-  getTicketId (): number {
-    return this.ticketId;
+  getVehicleNumber (): string {
+    return this.vehicleNumber;
   }
 
-  setTicketId (ticketId: number) {
-    this.ticketId = ticketId;
+  setVehicleNumber (vehicleNumber: string) {
+    this.vehicleNumber = vehicleNumber;
   }
   
-  getOperatorName (): string {
-    return this.operatorName;
+  getVehiclType (): VehicleType {
+    return this.vehicleType;
   }
 
-  setOperatorName (operatorName: string) {
-    this.operatorName = operatorName;
+  setVehiclType (vehicleType: VehicleType) {
+    this.vehicleType = vehicleType;
   }
   
-  getResponseStatus (): ResponseStatus {
-    return this.responseStatus;
+  getGateId (): number {
+    return this.gateId;
   }
 
-  setResponseStatus (responseStatus: ResponseStatus) {
-    this.responseStatus = responseStatus;
-  }
-  
-  getMessage (): string {
-    return this.message;
-  }
-
-  setMessage (message: string) {
-    this.message = message;
+  setGateId (gateId: number) {
+    this.gateId = gateId;
   }
 }

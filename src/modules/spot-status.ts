@@ -1,1 +1,5 @@
-export enum SpotStatus {}
+export enum SpotStatus {
+  AVAILABLE,
+  UNAVAILABLE,
+  PARKED,
+}

@@ -3,7 +3,7 @@ import { ParkingSpot } from "./parking-spot";
 
 export class ParkingFloor extends BaseModel {
   private floorNo!: number;
-  private parkingSpots!: ParkingSpot;
+  private parkingSpots!: ParkingSpot[];
 
   getFloorNo () {
     return this.floorNo;
@@ -17,7 +17,7 @@ export class ParkingFloor extends BaseModel {
     return this.parkingSpots;
   }
 
-  setParkingSpots (parkingSpots: ParkingSpot) {
+  setParkingSpots (parkingSpots: ParkingSpot[]) {
     this.parkingSpots = parkingSpots;
   }
 }

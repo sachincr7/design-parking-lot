@@ -1,4 +1,4 @@
-Parking Lot Management System
+## Parking Lot Management System
 This TypeScript project is an implementation of a Parking Lot Management System, which efficiently manages parking spaces, vehicles, and ticketing operations for a multi-level parking facility.
 
 Features

@@ -41,7 +41,8 @@ export class TicketService {
     const gate: Gate | null = this.gateRepository.findGateById(gateId);
 
     if (!gate) {
-      throw new InvalidGateException();
+      // throw new InvalidGateException();
+      throw new Error('Gate not available');
     }
 
     const operator: Operator = gate.getCurrentOperator();

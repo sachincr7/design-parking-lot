@@ -13,7 +13,7 @@ export class Gate extends BaseModel {
 		return this.gateNumber;
 	}
 
-	getOperator(): Operator {
+	getCurrentOperator(): Operator {
 		return this.currentOperator;
 	}
 
@@ -29,7 +29,7 @@ export class Gate extends BaseModel {
 		this.gateNumber = gateNumber;
 	}
 
-	setOperator(operator: Operator) {
+	setCurrentOperator(operator: Operator) {
 		this.currentOperator = operator;
 	}
 

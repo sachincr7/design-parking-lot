@@ -25,4 +25,4 @@ The TypeScript codebase follows a well-structured architectural design, separati
 Contributions to the project are welcome! If you have ideas for improvements, enhancements, or additional features, feel free to submit pull requests.
 
 ### License
-This project is licensed under the [MIT License](https://opensource.org/license/mit/)https://opensource.org/license/mit/.
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).

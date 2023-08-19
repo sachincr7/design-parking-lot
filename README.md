@@ -2,7 +2,7 @@
 This TypeScript project is an implementation of a Parking Lot Management System, which efficiently manages parking spaces, vehicles, and ticketing operations for a multi-level parking facility.
 
 Features
-Gate Management: The system supports a parking lot with 'n' gates, each managed by an operator responsible for issuing tickets and controlling access.
+* Gate Management: The system supports a parking lot with 'n' gates, each managed by an operator responsible for issuing tickets and controlling access.
 Multi-Floor Structure: The parking lot consists of 'n' floors, allowing for efficient parking space allocation across multiple levels.
 Parking Spot Assignment Strategy: The system employs a parking spot assignment strategy to find an available spot for incoming vehicles based on their type.
 Parking Spot Types: Each parking spot is designed to accommodate specific vehicle types (e.g., compact, sedan, SUV, etc.), ensuring optimized parking allocation.

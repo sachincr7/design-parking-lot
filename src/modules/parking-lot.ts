@@ -19,12 +19,12 @@ export class ParkingLot extends BaseModel {
 		return this.capacity;
 	}
 
-	setParkingFloors(floor: ParkingFloor) {
-		this.parkingFloors.push(floor);
+	setParkingFloors(parkingFloors: ParkingFloor[]) {
+		this.parkingFloors = parkingFloors;
 	}
 
-	setGates(gate: Gate) {
-		this.gates.push(gate);
+	setGates(gates: Gate[]) {
+		this.gates = gates;
 	}
 
 	setCapacity(capacity: number) {

@@ -1,6 +1,7 @@
+import { BaseModel } from "./base-model";
 import { VehicleType } from "./vehicle-type";
 
-export class Vehicle {
+export class Vehicle extends BaseModel {
   private vehicleNumber!: string;
 	private vehicleType!: VehicleType;
 

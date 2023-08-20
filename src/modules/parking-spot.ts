@@ -30,8 +30,8 @@ export class ParkingSpot extends BaseModel {
 		this.spotNumber = spotNumber;
 	}
 
-	setSupportedVehicles(vehicleType: VehicleType) {
-		this.supportedVehicles.push(vehicleType);
+	setSupportedVehicles(supportedVehicles: VehicleType[]) {
+		this.supportedVehicles = supportedVehicles;
 	}
 
 	setSpotStatus(status: SpotStatus) {

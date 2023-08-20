@@ -27,6 +27,7 @@ export class TicketController {
         vehicleNumber,
       );
     } catch (error) {
+      console.log('error', error);
       response.setResponseStatus(ResponseStatus.FAILURE);
       response.setMessage('Gate Id is invalid');
 

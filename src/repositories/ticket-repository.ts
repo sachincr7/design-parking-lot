@@ -5,9 +5,9 @@ export class TicketRepository {
   private lastSavedId = 1;
 
   save (ticket: Ticket): Ticket {
-    ticket.setId(this.lastSavedId + 1);
-    this.lastSavedId += 1;
+    ticket.setId(this.lastSavedId);
     this.tickets.set(this.lastSavedId, ticket);
+    this.lastSavedId += 1;
     return ticket;
   }
 }

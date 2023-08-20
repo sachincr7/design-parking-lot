@@ -53,7 +53,7 @@ export class TicketService {
       vehicle = new Vehicle();
       vehicle.setVehicleNumber(vehicleNumber);
       vehicle.setVehicleType(vehicleType);
-      this.vehicleRepository.save(vehicle);
+      this.vehicleRepository.save(vehicleNumber, vehicle);
     };
 
     const parkingLot: ParkingLot | null = this.parkingLotRepository.getParkingLotOfGate(gate);
